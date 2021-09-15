@@ -3,13 +3,13 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 interface KnexConfig {
-	[key: string]: object;
+	[key: string]: Record<string, unknown>;
 }
 
 
 const knexConfig: KnexConfig = {
 
-  development: {
+	development: {
 		client: 'postgresql',
 		connection: {
 			port: process.env.DB_PORT,

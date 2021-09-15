@@ -4,7 +4,7 @@ import http from 'http';
 import routes from './api/v1/index';
 import db from "../src/db/index";
 
-const app = () : http.Server => {
+const app = (): http.Server => {
 	const app = express();
 
 	app.use((_: Request, res: Response, next: NextFunction) => {

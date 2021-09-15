@@ -1,2 +1,3 @@
+import User from "./user.model";
 
-export {}
+export { User }

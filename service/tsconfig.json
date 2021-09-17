@@ -40,9 +40,16 @@
 			]
 		},
 	},
+	"ts-node": {
+		"files": true
+	},
+	"files": [
+		"src/types/*.ts",
+		"src/db/models/*.ts"
+	],
 	"include": [
-		"src/**/*.ts"
-, "knexfile.ts"	],
+		"src/**/*.ts",
+		"knexfile.ts"	],
 	"exclude": [
 		"node_modules",
 		"**/*.test.ts"

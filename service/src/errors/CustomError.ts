@@ -1,8 +1,7 @@
 
 class CustomError extends Error {
 	code: number;
-	// details?: Record<string, unknown>
-	details?: object;
+	details?: Record<string, unknown>
 
 	constructor(message: string, code: number, details: Record<string, unknown>) {
 		super(message || String(code));

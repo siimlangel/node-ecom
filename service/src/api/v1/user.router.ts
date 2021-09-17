@@ -10,7 +10,7 @@ usersRouter.get('/users', async (_: Request, res: Response) => {
 })
 
 usersRouter.get('/users/:id', async (req: Request, res: Response, next: NextFunction) => {
-	const id: any = req.params.id;
+	const id: string = req.params.id;
 	try {
 		const user = await User.query().findById(id);
 		if (user === undefined) throw new NotFoundError("User not found", undefined, {});
